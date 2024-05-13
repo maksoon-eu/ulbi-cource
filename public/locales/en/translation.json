@@ -1,5 +1,7 @@
 {
     "Тестовый текст": "Test text",
     "Перевод": "Translate",
-    "Язык": "English"
+    "Язык": "English",
+    "Произошла непредвиденная ошибка": "Something whent wrong",
+    "Обновить страницу": "Update page"
 }
