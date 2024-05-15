@@ -1,30 +1,25 @@
-import Button from "shared/ui/Button/Button";
-import { classNames } from "shared/lib/classNames/classNames";
-import { useEffect, useState } from "react";
+import { Button } from 'shared/ui/Button/Button';
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
-interface BugButtonProps {
-    className?: string;
-}
-
-export const BugButton = ({ className }: BugButtonProps) => {
+// Компонент для тестирования ErrorBoundary
+export const BugButton = () => {
     const [error, setError] = useState(false);
+    const { t } = useTranslation();
 
-    const onThrow = () => {
-        setError(true);
-    }
+    const onThrow = () => setError(true);
 
     useEffect(() => {
         if (error) {
             throw new Error();
         }
-    }, [error])
+    }, [error]);
 
     return (
-        <Button 
+        <Button
             onClick={onThrow}
-            className={classNames('', {}, [className])}
         >
-            throw Error
+            {t('throw error')}
         </Button>
     );
 };
