@@ -1,11 +1,9 @@
 import 'app/styles/index.scss';
-import { StoryFn } from "@storybook/react";
-import { BrowserRouter } from "react-router-dom";
+import { StoryFn } from '@storybook/react';
+import { BrowserRouter } from 'react-router-dom';
 
-export const RouteDecorator = (StoryComponent: StoryFn) => {
-    return (
-        <BrowserRouter>
-            <StoryComponent />
-        </BrowserRouter>
-    )
-}
+export const RouteDecorator = (StoryComponent: StoryFn) => (
+    <BrowserRouter>
+        <StoryComponent />
+    </BrowserRouter>
+);

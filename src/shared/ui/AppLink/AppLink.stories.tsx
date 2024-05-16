@@ -12,8 +12,8 @@ const meta: Meta<typeof AppLink> = {
     },
     tags: ['autodocs'],
     args: {
-        to: '/'
-    }
+        to: '/',
+    },
 };
 
 export default meta;
@@ -22,59 +22,59 @@ type Story = StoryObj<typeof AppLink>;
 export const PrimaryDark: Story = {
     args: {
         children: 'Text',
-        theme: AppLinkTheme.PRIMARY
+        theme: AppLinkTheme.PRIMARY,
     },
     decorators: [
-        ThemeDecorator(Theme.DARK)
-    ]
+        ThemeDecorator(Theme.DARK),
+    ],
 };
 
 export const SecondaryDark: Story = {
     args: {
         children: 'Text',
-        theme: AppLinkTheme.SECONDARY
+        theme: AppLinkTheme.SECONDARY,
     },
     decorators: [
-        ThemeDecorator(Theme.DARK)
-    ]
+        ThemeDecorator(Theme.DARK),
+    ],
 };
 
 export const RedDark: Story = {
     args: {
         children: 'Text',
-        theme: AppLinkTheme.RED
+        theme: AppLinkTheme.RED,
     },
     decorators: [
-        ThemeDecorator(Theme.DARK)
-    ]
+        ThemeDecorator(Theme.DARK),
+    ],
 };
 
 export const PrimaryLight: Story = {
     args: {
         children: 'Text',
-        theme: AppLinkTheme.PRIMARY
+        theme: AppLinkTheme.PRIMARY,
     },
     decorators: [
-        ThemeDecorator(Theme.LIGHT)
-    ]
+        ThemeDecorator(Theme.LIGHT),
+    ],
 };
 
 export const SecondaryLight: Story = {
     args: {
         children: 'Text',
-        theme: AppLinkTheme.SECONDARY
+        theme: AppLinkTheme.SECONDARY,
     },
     decorators: [
-        ThemeDecorator(Theme.LIGHT)
-    ]
+        ThemeDecorator(Theme.LIGHT),
+    ],
 };
 
 export const RedLight: Story = {
     args: {
         children: 'Text',
-        theme: AppLinkTheme.RED
+        theme: AppLinkTheme.RED,
     },
     decorators: [
-        ThemeDecorator(Theme.LIGHT)
-    ]
+        ThemeDecorator(Theme.LIGHT),
+    ],
 };

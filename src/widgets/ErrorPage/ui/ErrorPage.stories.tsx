@@ -19,13 +19,13 @@ type Story = StoryObj<typeof ErrorPage>;
 export const Light: Story = {
     args: {},
     decorators: [
-        ThemeDecorator(Theme.LIGHT)
-    ]
+        ThemeDecorator(Theme.LIGHT),
+    ],
 };
 
 export const Dark: Story = {
     args: {},
     decorators: [
-        ThemeDecorator(Theme.DARK)
-    ]
+        ThemeDecorator(Theme.DARK),
+    ],
 };
