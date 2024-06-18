@@ -19,10 +19,3 @@ Primary.args = {
     isOpen: true,
     children: 'fjdjfnjdnfjdnjfndjnfjdnjfdjnfjdjfnjdnjfdjnfjdjf',
 };
-
-export const Dark = Template.bind({});
-Dark.args = {
-    isOpen: true,
-    children: 'fjdjfnjdnfjdnjfndjnfjdnjfdjnfjdjfnjdnjfdjnfjdjf',
-};
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
