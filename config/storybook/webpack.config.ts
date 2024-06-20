@@ -29,5 +29,11 @@ export default ({ config }: {config: webpack.Configuration}) => {
 
     config.module?.rules?.push(buildCssLoaders(true));
 
+    config.plugins?.push(
+        new webpack.DefinePlugin({
+            __IS_DEV__: JSON.stringify(true), // или false, в зависимости от ваших нужд
+        }),
+    );
+
     return config;
 };
