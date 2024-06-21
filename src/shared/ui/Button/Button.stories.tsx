@@ -75,7 +75,7 @@ export const Square: Story = {
     },
 };
 
-export const SquareSiseM: Story = {
+export const SquareSizeM: Story = {
     args: {
         children: '>',
         theme: ButtonTheme.BACKGROUND_INVERTED,
@@ -84,7 +84,7 @@ export const SquareSiseM: Story = {
     },
 };
 
-export const SquareSiseL: Story = {
+export const SquareSizeL: Story = {
     args: {
         children: '>',
         theme: ButtonTheme.BACKGROUND_INVERTED,
@@ -102,7 +102,7 @@ export const SquareSizeXL: Story = {
     },
 };
 
-export const OutlineSiseM: Story = {
+export const OutlineSizeM: Story = {
     args: {
         children: 'Text',
         theme: ButtonTheme.OUTLINE,
@@ -110,7 +110,7 @@ export const OutlineSiseM: Story = {
     },
 };
 
-export const OutlineSiseL: Story = {
+export const OutlineSizeL: Story = {
     args: {
         children: 'Text',
         theme: ButtonTheme.OUTLINE,
@@ -118,7 +118,7 @@ export const OutlineSiseL: Story = {
     },
 };
 
-export const OutlineSiziXL: Story = {
+export const OutlineSizeXL: Story = {
     args: {
         children: 'Text',
         theme: ButtonTheme.OUTLINE,
