@@ -3,7 +3,7 @@ import path from 'path';
 import { BuildPaths } from '../build/types/config';
 import { buildCssLoaders } from '../build/loaders/buildCssLoaders';
 
-export default ({ config }: {config: webpack.Configuration}) => {
+export default ({ config }: { config: webpack.Configuration }) => {
     const paths: BuildPaths = {
         build: '',
         html: '',
@@ -13,7 +13,7 @@ export default ({ config }: {config: webpack.Configuration}) => {
     config.resolve?.modules?.push(paths.src);
     config.resolve?.extensions?.push('.ts', '.tsx');
 
-    // @ts-ignore: Unreachable code error
+    // @ts-expect-error: kfkjkf
     // eslint-disable-next-line no-param-reassign
     config.module.rules = config.module.rules.map((rule: RuleSetRule) => {
         if (/svg/.test(rule.test as string)) {
@@ -32,7 +32,7 @@ export default ({ config }: {config: webpack.Configuration}) => {
     config.plugins?.push(
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(true), // или false, в зависимости от ваших нужд
-        }),
+        })
     );
 
     return config;
