@@ -10,8 +10,8 @@ export default ({ config }: { config: webpack.Configuration }) => {
         entry: '',
         src: path.resolve(__dirname, '..', '..', 'src'),
     };
-    config.resolve?.modules?.push(paths.src);
-    config.resolve?.extensions?.push('.ts', '.tsx');
+    config.resolve!.modules!.push(paths.src);
+    config.resolve!.extensions!.push('.ts', '.tsx');
 
     // @ts-expect-error: kfkjkf
     // eslint-disable-next-line no-param-reassign
@@ -22,16 +22,17 @@ export default ({ config }: { config: webpack.Configuration }) => {
         return rule;
     });
 
-    config.module?.rules?.push({
+    config.module!.rules!.push({
         test: /\.svg$/,
         use: ['@svgr/webpack'],
     });
 
-    config.module?.rules?.push(buildCssLoaders(true));
+    config.module!.rules!.push(buildCssLoaders(true));
 
-    config.plugins?.push(
+    config.plugins!.push(
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(true), // или false, в зависимости от ваших нужд
+            __API__: JSON.stringify(''),
         })
     );
 

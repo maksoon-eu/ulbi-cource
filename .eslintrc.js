@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
     env: {
         browser: true,
@@ -42,5 +43,6 @@ module.exports = {
     },
     globals: {
         __IS_DEV__: true,
+        __API__: true,
     },
 };
