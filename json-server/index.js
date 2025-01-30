@@ -1,6 +1,6 @@
-const fs = require('fs');
 const jsonServer = require('json-server');
 const path = require('path');
+const fs = require('fs');
 
 const server = jsonServer.create();
 
@@ -34,7 +34,7 @@ server.post('/login', (req, res) => {
 
         return res.status(403).json({ message: 'User not found' });
     } catch (e) {
-        console.log(e);
+        console.log(e.message);
         return res.status(500).json({ message: e.message });
     }
 });
