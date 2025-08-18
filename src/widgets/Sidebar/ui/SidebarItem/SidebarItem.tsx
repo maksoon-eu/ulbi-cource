@@ -3,10 +3,10 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { SidebarItemType } from 'widgets/Sidebar/model/items';
 import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
-
-import cls from './SidebarItem.module.scss';
 import { useSelector } from "react-redux";
 import { getUserAuthData } from "entity/User";
+
+import cls from './SidebarItem.module.scss';
 
 interface SidebarItemProps {
     item: SidebarItemType;

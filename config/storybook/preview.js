@@ -25,6 +25,6 @@ const withStoreProvider = (Story) => (
 export const decorators = [
     StyleDecorator,
     ThemeDecorator(Theme.LIGHT),
-    RouteDecorator,
     withStoreProvider,
+    RouteDecorator,
 ];
